@@ -1,0 +1,68 @@
+a {
+  color: #595959;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 1px 3px black;
+  box-shadow: 0px 1px 3px black;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+  background: #e3e3e3;
+  background: -moz-linear-gradient(top, #e3e3e3 0%, #e3e3e3 32%, #aeaeae 100%);
+  background: -webkit-linear-gradient(top, #e3e3e3 0%, #e3e3e3 32%, #aeaeae 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), color-stop(32%, #e3e3e3), to(#aeaeae));
+  background: -o-linear-gradient(top, #e3e3e3 0%, #e3e3e3 32%, #aeaeae 100%);
+  background: linear-gradient(to bottom, #e3e3e3 0%, #e3e3e3 32%, #aeaeae 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#aeaeae',GradientType=0 );
+  font-family: "Arial", "Helvetica";
+  font-weight: bold;
+  margin: 10px;
+  display: inline-block; }
+  a:before {
+    content: '';
+    border: solid 1px #656565;
+    border-radius: 10px;
+    position: absolute;
+    left: -7px;
+    right: -7px;
+    top: -7px;
+    bottom: -7px;
+    background-color: #e3e3e3;
+    z-index: -1; }
+  a:after {
+    content: '';
+    border: solid 1px #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    left: -6px;
+    right: -6px;
+    top: -6px;
+    bottom: -6px; }
+  a span.star {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 5px 10px 7px 10px;
+    border-right: .3em solid transparent;
+    border-bottom: .7em  solid #888888;
+    border-left: .3em solid transparent;
+    /* Controlls the size of the stars. */
+    font-size: 9px; }
+    a span.star:before, a span.star:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: .6em;
+      left: -1em;
+      border-right: 1em solid transparent;
+      border-bottom: .7em  solid #888888;
+      border-left: 1em solid transparent;
+      -webkit-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      transform: rotate(-35deg); }
+    a span.star:after {
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      transform: rotate(35deg); }
